@@ -1,0 +1,21 @@
+{
+  "name": "react-express-supabase-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:web\" \"npm:dev:server\"",
+    "dev:web": "npm --prefix apps/web run dev",
+    "dev:server": "npm --prefix apps/server run dev",
+    "build": "npm --prefix apps/server run build && npm --prefix apps/web run build",
+    "start": "npm --prefix apps/server start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "cross-env": "^10.0.0"
+  }
+}

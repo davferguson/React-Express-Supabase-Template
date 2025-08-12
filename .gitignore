@@ -1,0 +1,68 @@
+# --- Node & package managers ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Build & outputs ---
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+.vite/
+*.tsbuildinfo
+**/dist/
+**/build/
+**/.vite/
+**/.parcel-cache/
+
+# --- Environment & secrets ---
+# Never commit real env files; keep only samples like env.example
+.env
+.env.*
+!*.example
+!**/env.example
+!**/.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+.npmrc
+
+# Common app-level env (covered by above, kept for clarity)
+apps/**/.env
+apps/**/.env.*
+!apps/**/env.example
+
+# Supabase local artifacts
+supabase/.temp/
+supabase/.branches/
+
+# --- Logs ---
+logs/
+*.log
+*.log.*
+
+# --- Editors & OS noise ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.history/
+*.swp
+*.swo
+*.orig
+
+# --- Framework-specific (harmless if absent) ---
+.next/
+.nuxt/
+.vercel/
+.netlify/
+
+# --- Project-specific notes that shouldn't be committed (safe default) ---
+databaseinfo.txt
+
+
